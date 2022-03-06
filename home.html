@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <style>
+        .songs{
+            border: 2px solid black;
+            border-radius: 5px;
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 30px;
+        }
+        .songs button{
+            border: none;
+            background-color: transparent;
+        }
+        footer{
+            position: absolute;
+            bottom: 0px;
+            width: 100%;
+            /* border: 2px solid black; */
+        }
+        #pogbar{
+            width: 100%;
+        }
+        .controler{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .controler button{
+            height: 50px;
+            width: 90px;
+            border-radius: 5px;
+        }
+        .navbar{
+            border-bottom: 3px solid black;
+            background-color: white;
+        }
+        .navbar-brand{
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Sigma</a>
+            <!-- <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success bg-light" type="submit">Search</button>
+            </form> -->
+        </div>
+      </nav>
+      <div class="container">
+          <div class="songs">
+              <span>Let Me Love You</span>
+              <div class="hold">
+                  <button onclick="fuck(0)">Play</button>
+              </div>
+          </div>
+          <div class="songs">
+            <span>Shape Of You</span>
+            <div class="hold">
+                <button onclick="fuck(1)">Play</button>
+            </div>
+        </div>
+        <div class="songs">
+            <span>Diamond Heart</span>
+            <div class="hold">
+                <button onclick="fuck(2)">Play</button>
+            </div>
+        </div>
+        <div class="songs">
+            <span>Lily</span>
+            <div class="hold">
+                <button onclick="fuck(3)">Play</button>
+            </div>
+        </div>
+        <div class="songs">
+            <span>Cold Play</span>
+            <div class="hold">
+                <button onclick="fuck(4)">Play</button>
+            </div>
+        </div>
+      </div>
+      <footer>
+          <input type="range" name="progress" id="pogbar" min="0" value="0" max="100000">
+          <div class="controler">
+              <button id="prv">Previous</button>
+              <button id="ply">Play/Pause</button>
+              <button id="aft">Next</button>
+          </div>
+      </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="javascript.js"></script>
+</body>
+</html>
